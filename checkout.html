@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Chic Cantik</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Chic Cantik</h1>
+      <p class="desc-toko">
+        Chic Cantik menyediakan berbagai tas wanita stylish dengan harga
+        terjangkau, cocok untuk berbagai kesempatan.
+      </p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="cart.html">Keranjang</a>
+      </nav>
+    </header>
+
+    <!-- Form Checkout -->
+    <section class="kontak-form">
+      <h2>Form Checkout</h2>
+      <form id="checkoutForm">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="telepon">No. Telepon</label>
+        <input type="tel" id="telepon" name="telepon" required />
+
+        <label for="alamat">Alamat Lengkap</label>
+        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="pembayaran">Metode Pembayaran</label>
+        <select id="pembayaran" name="pembayaran" required>
+          <option value="">-- Pilih Metode --</option>
+          <option value="transfer">Transfer Bank</option>
+          <option value="cod">Cash on Delivery</option>
+          <option value="ewallet">E-Wallet</option>
+        </select>
+
+        <button type="submit" class="btn">Selesaikan Pesanan</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Alamat: Tegallega Barat No. 82</p>
+      <p>Email: chiccantik@gmail.com | Telp: 085795726779</p>
+      <p>&copy; 2025 Chic Cantik. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Event listener untuk form checkout
+      document
+        .getElementById("checkoutForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // cegah reload
+
+          // Ambil data dummy
+          const nama = document.getElementById("nama").value;
+          const metode = document.getElementById("pembayaran").value;
+
+          // Kosongkan keranjang
+          localStorage.removeItem("cart");
+
+          // Notifikasi dummy
+          alert(
+            "Terima kasih " +
+              nama +
+              "! Pesanan Anda dengan metode " +
+              metode +
+              " sedang diproses."
+          );
+
+          // Redirect ke home
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>

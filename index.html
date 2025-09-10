@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chic Cantik - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Chic Cantik</h1>
+      <p class="desc-toko">
+        Chic Cantik menyediakan berbagai tas wanita stylish dengan harga
+        terjangkau, cocok untuk berbagai kesempatan.
+      </p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="cart.html">Keranjang</a>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+      <img src="images/banner.jpg" alt="Banner Chic Cantik" />
+      <div class="banner-text">Selamat Datang di Chic Cantik</div>
+    </section>
+
+    <!-- Produk -->
+    <section>
+      <h2 style="text-align: center; margin: 20px 0">Produk Unggulan</h2>
+      <div class="produk-list">
+        <div class="produk-item">
+          <img src="images/tas1.jpg" alt="Tas Elegan" />
+          <h3>Tas Elegan</h3>
+          <p>Rp 250.000</p>
+          <p>Tas elegan cocok untuk acara formal dan sehari-hari.</p>
+          <button
+            class="btn"
+            onclick="addToCart('tas1','Tas Elegan',250000,'images/tas1.jpg')"
+          >
+            Beli
+          </button>
+        </div>
+
+        <div class="produk-item">
+          <img src="images/tas2.jpg" alt="Tas Casual" />
+          <h3>Tas Casual</h3>
+          <p>Rp 200.000</p>
+          <p>Tas casual praktis dan modis untuk aktivitas harian.</p>
+          <button
+            class="btn"
+            onclick="addToCart('tas2','Tas Casual',200000,'images/tas2.jpg')"
+          >
+            Beli
+          </button>
+        </div>
+
+        <div class="produk-item">
+          <img src="images/tas3.jpg" alt="Tas Ransel" />
+          <h3>Tas Ransel</h3>
+          <p>Rp 300.000</p>
+          <p>Tas ransel stylish cocok untuk kuliah dan jalan santai.</p>
+          <button
+            class="btn"
+            onclick="addToCart('tas3','Tas Ransel',300000,'images/tas3.jpg')"
+          >
+            Beli
+          </button>
+        </div>
+
+        <div class="produk-item">
+          <img src="images/tas4.jpg" alt="Tas Tote" />
+          <h3>Tas Tote</h3>
+          <p>Rp 180.000</p>
+          <p>Tas tote simpel dengan ruang luas untuk kebutuhan sehari-hari.</p>
+          <button
+            class="btn"
+            onclick="addToCart('tas4','Tas Tote',180000,'images/tas4.jpg')"
+          >
+            Beli
+          </button>
+        </div>
+
+        <div class="produk-item">
+          <img src="images/tas5.jpg" alt="Tas Mini" />
+          <h3>Tas Mini</h3>
+          <p>Rp 150.000</p>
+          <p>Tas mini imut cocok untuk hangout dan acara santai.</p>
+          <button
+            class="btn"
+            onclick="addToCart('tas5','Tas Mini',150000,'images/tas5.jpg')"
+          >
+            Beli
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Alamat: Tegallega Barat No. 82</p>
+      <p>Email: chiccantik@gmail.com | Telp: 085795726779</p>
+      <p>&copy; 2025 Chic Cantik. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
