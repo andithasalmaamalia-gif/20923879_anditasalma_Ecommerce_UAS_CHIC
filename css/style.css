@@ -252,3 +252,18 @@ footer p {
   flex: 1;
   margin-left: 10px;
 }
+/* Semua gambar produk */
+.produk-item img,
+.cart-item img {
+  max-width: 100%;   /* gambar nggak akan lebih lebar dari kontainer */
+  height: auto;      /* tinggi menyesuaikan proporsi */
+  border-radius: 10px;
+}
+
+/* Untuk halaman detail produk */
+.produk-detail img {
+  max-width: 100%;   /* biar di HP otomatis mengecil */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
